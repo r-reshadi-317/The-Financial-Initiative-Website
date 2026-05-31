@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { LogoMark } from './Logo';
+import tfiLogo from '../assets/TFI.png';
 import { CONTACT_EMAIL } from '../data/programs';
 
 const footerNav = [
@@ -37,7 +37,20 @@ export default function Footer() {
                 marginBottom: 16,
               }}
             >
-              <LogoMark boxSize={32} iconSize={17} borderRadius={7} />
+              <div
+                style={{
+                  width: 48,
+                  height: 48,
+                  borderRadius: '50%',
+                  background: '#fff',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  flexShrink: 0,
+                }}
+              >
+                <img src={tfiLogo} alt="The Financial Initiative Logo" style={{ height: 40 }} />
+              </div>
               <div>
                 <div style={{ color: '#fff', fontWeight: 800, fontSize: 14 }}>
                   The Financial Initiative
