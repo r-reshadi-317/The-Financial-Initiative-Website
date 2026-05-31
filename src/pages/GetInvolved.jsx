@@ -141,6 +141,7 @@ ${form.message}`;
               boxShadow: '0 4px 32px rgba(10,22,40,0.1)',
               border: '1px solid #e8edf5',
             }}
+            id="contact-form"
           >
             <h2
               style={{

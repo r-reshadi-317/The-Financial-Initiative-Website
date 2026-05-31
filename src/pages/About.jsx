@@ -1,5 +1,6 @@
 import PageLayout from '../components/PageLayout';
 import HeroBanner from '../components/HeroBanner';
+import { Link } from 'react-router-dom';
 import { partners, CONTACT_EMAIL } from '../data/programs';
 
 const missionCards = [
@@ -215,7 +216,8 @@ export default function About() {
               </div>
             ))}
 
-            <div
+            <Link
+              to="/get-involved#contact-form"
               style={{
                 background: '#fff',
                 borderRadius: 18,
@@ -227,6 +229,17 @@ export default function About() {
                 alignItems: 'center',
                 gap: 16,
                 opacity: 0.65,
+                textDecoration: 'none',
+                cursor: 'pointer',
+                transition: 'all 0.2s',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.opacity = '1';
+                e.currentTarget.style.borderColor = '#17a2d8';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.opacity = '0.65';
+                e.currentTarget.style.borderColor = '#c8d5e8';
               }}
             >
               <div
@@ -247,18 +260,16 @@ export default function About() {
               <div style={{ fontWeight: 700, color: '#8a9bbf' }}>
                 Become a Partner
               </div>
-              <a
-                href={`mailto:${CONTACT_EMAIL}`}
+              <div
                 style={{
                   color: '#17a2d8',
                   fontSize: 13,
-                  textDecoration: 'none',
                   fontWeight: 600,
                 }}
               >
-                {CONTACT_EMAIL}
-              </a>
-            </div>
+                Get Started
+              </div>
+            </Link>
           </div>
         </div>
       </section>
