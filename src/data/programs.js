@@ -39,16 +39,10 @@ export const impactStats = [
     desc: 'Across workshops and events',
   },
   {
-    value: 10,
-    suffix: '+',
-    label: 'Workshops Delivered',
-    desc: 'Free, high-quality sessions',
-  },
-  {
     value: 3,
     suffix: '',
-    label: 'States Reached',
-    desc: 'Growing across the US',
+    label: 'Countries Reached',
+    desc: 'Growing Globally',
   },
   {
     value: 100,
