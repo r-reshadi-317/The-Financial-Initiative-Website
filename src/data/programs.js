@@ -54,4 +54,4 @@ export const partners = [
   },
 ];
 
-export const CONTACT_EMAIL = 'loop.life16@gmail.com';
+export const CONTACT_EMAIL = 'thefinancialinitiative52@gmail.com';
