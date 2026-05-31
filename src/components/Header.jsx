@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { LogoMark } from './Logo';
+import tfiLogo from '../assets/TFI.png';
 import { CONTACT_EMAIL } from '../data/programs';
 
 const navLinks = [
@@ -61,7 +61,20 @@ export default function Header() {
             gap: 10,
           }}
         >
-          <LogoMark />
+          <div
+            style={{
+              width: 60,
+              height: 60,
+              borderRadius: '50%',
+              background: '#fff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0,
+            }}
+          >
+            <img src={tfiLogo} alt="The Financial Initiative Logo" style={{ height: 50 }} />
+          </div>
           <div>
             <div
               style={{

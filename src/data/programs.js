@@ -33,7 +33,7 @@ export const programs = [
 
 export const impactStats = [
   {
-    value: 500,
+    value: 100,
     suffix: '+',
     label: 'Students Reached',
     desc: 'Across workshops and events',
