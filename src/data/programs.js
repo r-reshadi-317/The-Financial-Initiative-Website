@@ -32,10 +32,30 @@ export const programs = [
 ];
 
 export const impactStats = [
-  { num: '500+', label: 'Students Reached', desc: 'Across workshops and events' },
-  { num: '10+', label: 'Workshops Delivered', desc: 'Free, high-quality sessions' },
-  { num: '3', label: 'States Reached', desc: 'Growing across the US' },
-  { num: '100%', label: 'Free Programs', desc: 'No cost, ever' },
+  {
+    value: 500,
+    suffix: '+',
+    label: 'Students Reached',
+    desc: 'Across workshops and events',
+  },
+  {
+    value: 10,
+    suffix: '+',
+    label: 'Workshops Delivered',
+    desc: 'Free, high-quality sessions',
+  },
+  {
+    value: 3,
+    suffix: '',
+    label: 'States Reached',
+    desc: 'Growing across the US',
+  },
+  {
+    value: 100,
+    suffix: '%',
+    label: 'Free Programs',
+    desc: 'No cost, ever',
+  },
 ];
 
 export const partners = [

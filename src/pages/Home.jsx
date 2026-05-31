@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import CountUpNumber from '../components/CountUpNumber';
 import PageLayout from '../components/PageLayout';
 import { impactStats, partners } from '../data/programs';
 
@@ -150,7 +151,7 @@ export default function Home() {
               gap: 32,
             }}
           >
-            {impactStats.map((stat) => (
+            {impactStats.map((stat, index) => (
               <div
                 key={stat.label}
                 style={{
@@ -162,16 +163,18 @@ export default function Home() {
                   border: '1px solid #e8edf5',
                 }}
               >
-                <div
+                <CountUpNumber
+                  value={stat.value}
+                  suffix={stat.suffix}
+                  delay={index * 120}
                   style={{
                     fontSize: '2.6rem',
                     fontWeight: 800,
                     color: '#17a2d8',
                     marginBottom: 8,
+                    fontVariantNumeric: 'tabular-nums',
                   }}
-                >
-                  {stat.num}
-                </div>
+                />
                 <div
                   style={{
                     fontWeight: 700,
