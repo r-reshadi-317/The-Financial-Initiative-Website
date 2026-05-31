@@ -1,0 +1,57 @@
+export const programs = [
+  {
+    num: '01',
+    title: 'Budgeting & Saving',
+    desc: 'Master the fundamentals of managing money. From tracking income and expenses to building an emergency fund, students leave this session with a real, working budget they can use immediately.',
+    topics: ['50/30/20 Rule', 'Emergency Funds', 'Expense Tracking'],
+  },
+  {
+    num: '02',
+    title: 'Investing 101',
+    desc: 'Demystifying the stock market for beginners. Covering index funds, compound interest, risk tolerance, and why starting young gives you a massive advantage over time.',
+    topics: ['Index Funds', 'Compound Interest', 'Risk & Return'],
+  },
+  {
+    num: '03',
+    title: 'Credit & Debt',
+    desc: 'Understanding credit scores, how debt works, and how to use credit cards responsibly. We break down what lenders actually look at and how to build a strong financial reputation early.',
+    topics: ['Credit Scores', 'Interest Rates', 'Debt Management'],
+  },
+  {
+    num: '04',
+    title: 'Taxes & Income',
+    desc: 'A practical guide to understanding your paycheck, filing taxes for the first time, and learning what deductions and credits actually mean for your wallet.',
+    topics: ['W-2 & 1099', 'Tax Filing', 'Deductions & Credits'],
+  },
+  {
+    num: '05',
+    title: 'ESG & Sustainable Investing',
+    desc: 'An introduction to Environmental, Social, and Governance (ESG) investing — how values-aligned portfolios work, why companies are rated on sustainability, and how young investors can build a future they believe in.',
+    topics: ['ESG Ratings', 'Green Finance', 'Impact Investing'],
+  },
+];
+
+export const impactStats = [
+  { num: '500+', label: 'Students Reached', desc: 'Across workshops and events' },
+  { num: '10+', label: 'Workshops Delivered', desc: 'Free, high-quality sessions' },
+  { num: '3', label: 'States Reached', desc: 'Growing across the US' },
+  { num: '100%', label: 'Free Programs', desc: 'No cost, ever' },
+];
+
+export const partners = [
+  {
+    img: 'https://media.base44.com/images/public/6a0df060db6599875b161311/731d4d410_image.png',
+    name: 'Green Silicon Valley',
+    role: 'International Workshop Partner',
+    bg: '#e8ede8',
+    href: 'https://www.greensiliconvalley.org',
+  },
+  {
+    img: 'https://media.base44.com/images/public/6a0df060db6599875b161311/cea921b3e_image.png',
+    name: 'PinkAware',
+    role: 'Community Impact Partner',
+    bg: '#fff0f5',
+  },
+];
+
+export const CONTACT_EMAIL = 'loop.life16@gmail.com';
