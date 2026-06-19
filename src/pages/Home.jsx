@@ -135,7 +135,7 @@ export default function Home() {
             </span>
             <h2
               style={{
-                fontSize: 'clamp(1.6rem,3vw,2.4rem)',
+                fontSize: 'clamp(1.8rem,3vw,2.8rem)',
                 fontWeight: 800,
                 color: '#0a1628',
                 margin: 0,
@@ -168,7 +168,7 @@ export default function Home() {
                   suffix={stat.suffix}
                   delay={index * 120}
                   style={{
-                    fontSize: '2.6rem',
+                    fontSize: '3.6rem',
                     fontWeight: 800,
                     color: '#17a2d8',
                     marginBottom: 8,
@@ -177,6 +177,7 @@ export default function Home() {
                 />
                 <div
                   style={{
+                    fontSize: '1.15rem',
                     fontWeight: 700,
                     color: '#0a1628',
                     marginBottom: 6,
