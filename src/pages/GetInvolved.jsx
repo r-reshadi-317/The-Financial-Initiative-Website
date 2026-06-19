@@ -92,7 +92,7 @@ ${form.message}`;
                   background: '#fff',
                   borderRadius: 16,
                   padding: '32px 28px',
-                  border: '1px solid #e8edf5',
+                  border: '1px solid #d1d5db',
                   boxShadow: '0 2px 12px rgba(10,22,40,0.06)',
                 }}
               >

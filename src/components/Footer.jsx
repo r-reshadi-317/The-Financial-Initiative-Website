@@ -173,7 +173,7 @@ export default function Footer() {
             fontSize: 12,
           }}
         >
-          <span>© 2024 The Financial Initiative. All rights reserved.</span>
+          <span>© 2026 The Financial Initiative. All rights reserved.</span>
           <span>Student-Led Nonprofit</span>
         </div>
       </div>

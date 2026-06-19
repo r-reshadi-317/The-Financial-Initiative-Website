@@ -1,6 +1,6 @@
 # The Financial Initiative Website
 
-A local replica of [thefinancialinitiative.base44.app](https://thefinancialinitiative.base44.app/), built with React and Vite.
+Website for The Financial Initiative Nonprofit
 
 ## Pages
 

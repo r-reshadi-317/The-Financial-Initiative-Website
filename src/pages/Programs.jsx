@@ -29,7 +29,7 @@ export default function Programs() {
                 background: '#fff',
                 borderRadius: 18,
                 padding: '36px 32px',
-                border: '1px solid #e8edf5',
+                border: '1px solid #d1d5db',
                 boxShadow: '0 2px 16px rgba(10,22,40,0.06)',
               }}
             >
