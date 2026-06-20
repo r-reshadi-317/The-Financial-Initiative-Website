@@ -54,13 +54,6 @@ export const impactStats = [
 
 export const partners = [
   {
-    img: 'https://media.base44.com/images/public/6a0df060db6599875b161311/731d4d410_image.png',
-    name: 'Green Silicon Valley',
-    role: 'International Workshop Partner',
-    bg: '#e8ede8',
-    href: 'https://www.greensiliconvalley.org',
-  },
-  {
     img: 'https://media.base44.com/images/public/6a0df060db6599875b161311/cea921b3e_image.png',
     name: 'PinkAware',
     role: 'Community Impact Partner',
