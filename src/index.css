@@ -16,3 +16,13 @@ body {
     display: block !important;
   }
 }
+
+@media (max-width: 860px) {
+  .legal-advocacy-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .legal-pdf-viewer {
+    height: 560px !important;
+  }
+}

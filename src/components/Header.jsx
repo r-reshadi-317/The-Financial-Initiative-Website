@@ -6,6 +6,7 @@ import { CONTACT_EMAIL } from '../data/programs';
 const navLinks = [
   { label: 'Home', to: '/' },
   { label: 'Programs', to: '/programs' },
+  { label: 'Legal Advocacy', to: '/legal-advocacy' },
   { label: 'About', to: '/about' },
   { label: 'Get Involved', to: '/get-involved' },
 ];
