@@ -118,18 +118,6 @@ export default function Footer() {
               Partners
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-              <a
-                href="https://www.greensiliconvalley.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  color: 'rgba(255,255,255,0.6)',
-                  textDecoration: 'none',
-                  fontSize: 14,
-                }}
-              >
-                Green Silicon Valley
-              </a>
               <span style={{ color: 'rgba(255,255,255,0.6)', fontSize: 14 }}>
                 PinkAware
               </span>
