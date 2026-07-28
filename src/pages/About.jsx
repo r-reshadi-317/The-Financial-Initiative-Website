@@ -1,7 +1,9 @@
 import PageLayout from '../components/PageLayout';
 import HeroBanner from '../components/HeroBanner';
+import TeamMember from '../components/TeamMember';
 import { Link } from 'react-router-dom';
-import { partners, CONTACT_EMAIL } from '../data/programs';
+import { partners } from '../data/programs';
+import { teamMembers } from '../data/team';
 
 const missionCards = [
   {
@@ -123,6 +125,60 @@ export default function About() {
       </section>
 
       <section style={{ padding: '80px 24px', background: '#f7f9fc' }}>
+        <div style={{ maxWidth: 900, margin: '0 auto' }}>
+          <div style={{ textAlign: 'center', marginBottom: 64 }}>
+            <span
+              style={{
+                display: 'inline-block',
+                background: 'rgba(23,162,216,0.1)',
+                border: '1px solid rgba(23,162,216,0.3)',
+                color: '#0d85b5',
+                borderRadius: 20,
+                padding: '5px 16px',
+                fontSize: 11,
+                fontWeight: 700,
+                letterSpacing: '0.1em',
+                textTransform: 'uppercase',
+                marginBottom: 20,
+              }}
+            >
+              Our Team
+            </span>
+            <h2
+              style={{
+                fontSize: 'clamp(1.5rem, 3vw, 2rem)',
+                fontWeight: 800,
+                marginBottom: 12,
+              }}
+            >
+              The People Behind TFI
+            </h2>
+            <p
+              style={{
+                color: '#4a5a72',
+                maxWidth: 520,
+                margin: '0 auto',
+                lineHeight: 1.7,
+              }}
+            >
+              Meet the student leaders driving our mission to make financial
+              education accessible to every student.
+            </p>
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 80 }}>
+            {teamMembers.map((member, index) => (
+              <TeamMember
+                key={member.id}
+                member={member}
+                reverse={index % 2 === 1}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section style={{ padding: '80px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
           <span
             style={{
