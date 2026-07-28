@@ -6,6 +6,7 @@ const footerNav = [
   { label: 'Home', to: '/' },
   { label: 'Programs', to: '/programs' },
   { label: 'About', to: '/about' },
+  { label: 'News', to: '/news' },
   { label: 'Get Involved', to: '/get-involved' },
 ];
 

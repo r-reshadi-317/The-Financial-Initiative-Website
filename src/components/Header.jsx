@@ -8,6 +8,7 @@ const navLinks = [
   { label: 'Programs', to: '/programs' },
   { label: 'Legal Advocacy', to: '/legal-advocacy' },
   { label: 'About', to: '/about' },
+  { label: 'News', to: '/news' },
   { label: 'Get Involved', to: '/get-involved' },
 ];
 
