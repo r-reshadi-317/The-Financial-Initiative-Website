@@ -1,5 +1,6 @@
 import prestonLeePhoto from '../assets/team/preston-lee.png';
 import ryanReshadiPhoto from '../assets/team/ryan-reshadi.png';
+import dylanEnckPhoto from '../assets/team/dylan-enck.png';
 
 /**
  * Team members displayed on the About page.
@@ -24,7 +25,6 @@ export const teamMembers = [
     photo: dylanEnckPhoto,
     bio: 'Dylan Enck is a Homestead High School student who has had an interest in money since childhood. In pursuit, he broadened his focus into finance and economics, leading to work with nonprofits, school-based clubs, and Economics For Leaders at Duke University. Through this path, Dylan has connected to public services as well as working with his local Assemblymember to conduct research, interact with constituents, and assist with further needs for both the office and the Assemblymember. Across this, investing has been seen as trivial for savings, with money spread across numerous stocks and index funds aimed to rise.',
   },
-
   {
     id: 'ryan-reshadi',
     name: 'Ryan Reshadi',
