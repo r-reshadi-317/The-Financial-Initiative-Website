@@ -1,7 +1,7 @@
 import PageLayout from '../components/PageLayout';
 import HeroBanner from '../components/HeroBanner';
 
-const pdfPath = '/legal-advocacy-letter.pdf';
+const pdfPath = '/letter-of-advocacy-template.pdf';
 
 const pillStyle = {
   display: 'inline-block',
@@ -162,7 +162,7 @@ export default function LegalAdvocacy() {
                   Letter of Advocacy
                 </div>
                 <div style={{ color: '#7a8ca8', fontSize: 13 }}>
-                  The Financial Initiative's statement of support for SB 1147
+                  The Financial Initiative's advocacy letter template
                 </div>
               </div>
               <a
