@@ -1,7 +1,20 @@
 import PageLayout from '../components/PageLayout';
 import HeroBanner from '../components/HeroBanner';
 
-const pdfPath = '/letter-of-advocacy-template.pdf';
+const advocacyDocuments = [
+  {
+    path: '/legal-advocacy-letter.pdf',
+    title: 'Letter of Advocacy',
+    description: "The Financial Initiative's statement of support for SB 1147",
+    openLabel: 'Open Original Letter',
+  },
+  {
+    path: '/letter-of-advocacy-template.pdf',
+    title: 'Letter of Advocacy Template',
+    description: 'A customizable template for advocacy outreach',
+    openLabel: 'Open Letter Template',
+  },
+];
 
 const pillStyle = {
   display: 'inline-block',
@@ -119,86 +132,98 @@ export default function LegalAdvocacy() {
                 The letter respectfully requests an "Aye" vote from state
                 legislators as SB 1147 moves through the legislative process.
               </p>
-              <a
-                href={pdfPath}
-                target="_blank"
-                rel="noreferrer"
-                style={{
-                  background: '#17a2d8',
-                  color: '#fff',
-                  padding: '12px 20px',
-                  borderRadius: 8,
-                  fontWeight: 700,
-                  fontSize: 14,
-                  textDecoration: 'none',
-                  display: 'inline-block',
-                }}
-              >
-                Open Letter
-              </a>
+              <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+                {advocacyDocuments.map((document) => (
+                  <a
+                    key={document.path}
+                    href={document.path}
+                    target="_blank"
+                    rel="noreferrer"
+                    style={{
+                      background: '#17a2d8',
+                      color: '#fff',
+                      padding: '12px 20px',
+                      borderRadius: 8,
+                      fontWeight: 700,
+                      fontSize: 14,
+                      textDecoration: 'none',
+                      display: 'inline-block',
+                    }}
+                  >
+                    {document.openLabel}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 
-          <div style={{ ...cardStyle, overflow: 'hidden' }}>
-            <div
-              style={{
-                padding: '20px 24px',
-                borderBottom: '1px solid #e8edf5',
-                display: 'flex',
-                justifyContent: 'space-between',
-                gap: 16,
-                alignItems: 'center',
-                flexWrap: 'wrap',
-              }}
-            >
-              <div>
+          <div style={{ display: 'grid', gap: 24 }}>
+            {advocacyDocuments.map((document) => (
+              <div key={document.path} style={{ ...cardStyle, overflow: 'hidden' }}>
                 <div
                   style={{
-                    fontWeight: 800,
-                    color: '#0a1628',
-                    marginBottom: 4,
+                    padding: '20px 24px',
+                    borderBottom: '1px solid #e8edf5',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    gap: 16,
+                    alignItems: 'center',
+                    flexWrap: 'wrap',
                   }}
                 >
-                  Letter of Advocacy
+                  <div>
+                    <div
+                      style={{
+                        fontWeight: 800,
+                        color: '#0a1628',
+                        marginBottom: 4,
+                      }}
+                    >
+                      {document.title}
+                    </div>
+                    <div style={{ color: '#7a8ca8', fontSize: 13 }}>
+                      {document.description}
+                    </div>
+                  </div>
+                  <a
+                    href={document.path}
+                    download
+                    style={{
+                      color: '#17a2d8',
+                      fontWeight: 700,
+                      fontSize: 13,
+                      textDecoration: 'none',
+                      whiteSpace: 'nowrap',
+                    }}
+                  >
+                    Download PDF
+                  </a>
                 </div>
-                <div style={{ color: '#7a8ca8', fontSize: 13 }}>
-                  The Financial Initiative's advocacy letter template
-                </div>
+                <object
+                  data={document.path}
+                  type="application/pdf"
+                  className="legal-pdf-viewer"
+                  aria-label={`${document.title} PDF`}
+                  style={{
+                    width: '100%',
+                    height: 720,
+                    border: 0,
+                    display: 'block',
+                    background: '#eef3f8',
+                  }}
+                >
+                  <div style={{ padding: 32, color: '#4a5a72', lineHeight: 1.7 }}>
+                    This browser cannot display embedded PDFs.{' '}
+                    <a
+                      href={document.path}
+                      style={{ color: '#17a2d8', fontWeight: 700 }}
+                    >
+                      Open the letter in a new tab.
+                    </a>
+                  </div>
+                </object>
               </div>
-              <a
-                href={pdfPath}
-                download
-                style={{
-                  color: '#17a2d8',
-                  fontWeight: 700,
-                  fontSize: 13,
-                  textDecoration: 'none',
-                  whiteSpace: 'nowrap',
-                }}
-              >
-                Download PDF
-              </a>
-            </div>
-            <object
-              data={pdfPath}
-              type="application/pdf"
-              className="legal-pdf-viewer"
-              aria-label="Letter of Advocacy PDF"
-              style={{
-                width: '100%',
-                height: 720,
-                border: 0,
-                display: 'block',
-                background: '#eef3f8',
-              }}
-            >
-              <div style={{ padding: 32, color: '#4a5a72', lineHeight: 1.7 }}>
-                This browser cannot display embedded PDFs.{' '}
-                <a href={pdfPath} style={{ color: '#17a2d8', fontWeight: 700 }}>
-                  Open the letter in a new tab.
-                </a>
-              </div>
-            </object>
+            ))}
           </div>
         </div>
       </section>

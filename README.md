@@ -25,6 +25,21 @@ npm run build
 npm run preview
 ```
 
+## End-to-end regression tests
+
+Run the UI regression suite after feature work to verify primary pages, navigation,
+calls to action, forms, and outbound links on both desktop and mobile layouts:
+
+```bash
+npm run test:e2e
+```
+
+To inspect tests interactively while developing:
+
+```bash
+npm run test:e2e:ui
+```
+
 ## Design notes
 
 Colors and layout match the original Base44 site: navy gradients (`#0a1628`, `#0d2347`, `#1a3a6b`), accent cyan (`#17a2d8`), and Inter typography. Partner logos load from the original CDN.
