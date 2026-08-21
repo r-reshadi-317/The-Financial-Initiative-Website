@@ -10,9 +10,10 @@ export default function Programs() {
         badge="Free for All Students"
         title="Programs Built to Empower"
         subtitle="Every workshop is free, student-led, and designed to give real-world financial skills."
+        animated
       />
 
-      <section style={{ padding: '80px 24px', background: '#f7f9fc' }}>
+      <section className="motion-section" style={{ padding: '80px 24px', background: '#f7f9fc' }}>
         <div
           style={{
             maxWidth: 1100,
@@ -24,6 +25,7 @@ export default function Programs() {
         >
           {programs.map((program) => (
             <div
+              className="motion-card motion-program-card"
               key={program.num}
               style={{
                 background: '#fff',
@@ -89,6 +91,7 @@ export default function Programs() {
                 ))}
               </div>
               <Link
+                className="motion-link"
                 to="/get-involved"
                 style={{
                   color: '#17a2d8',
@@ -103,6 +106,7 @@ export default function Programs() {
           ))}
 
           <div
+            className="motion-card motion-program-card motion-card--dark"
             style={{
               background: '#0a1628',
               borderRadius: 18,
@@ -136,6 +140,7 @@ export default function Programs() {
               cost.
             </p>
             <a
+              className="motion-link"
               href={`mailto:${CONTACT_EMAIL}`}
               style={{
                 color: '#17a2d8',

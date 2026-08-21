@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <PageLayout>
       <section
+        className="motion-hero"
         style={{
           background:
             'linear-gradient(135deg, #0a1628 0%, #0d2347 60%, #1a3a6b 100%)',
@@ -18,6 +19,7 @@ export default function Home() {
         }}
       >
         <div
+          className="motion-hero__glow"
           style={{
             position: 'absolute',
             inset: 0,
@@ -26,7 +28,7 @@ export default function Home() {
             pointerEvents: 'none',
           }}
         />
-        <div style={{ maxWidth: 760, margin: '0 auto', position: 'relative' }}>
+        <div className="motion-hero__content" style={{ maxWidth: 760, margin: '0 auto', position: 'relative' }}>
           <span
             style={{
               display: 'inline-block',
@@ -79,6 +81,7 @@ export default function Home() {
             }}
           >
             <Link
+              className="motion-button"
               to="/programs"
               style={{
                 background: '#17a2d8',
@@ -94,6 +97,7 @@ export default function Home() {
               Explore Programs
             </Link>
             <Link
+              className="motion-button motion-button--ghost"
               to="/get-involved"
               style={{
                 border: '2px solid rgba(255,255,255,0.35)',
@@ -113,7 +117,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section style={{ background: '#f7f9fc', padding: '80px 24px' }}>
+      <section className="motion-section" style={{ background: '#f7f9fc', padding: '80px 24px' }}>
         <div style={{ maxWidth: 1100, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <span
@@ -153,6 +157,7 @@ export default function Home() {
           >
             {impactStats.map((stat, index) => (
               <div
+                className="motion-card"
                 key={stat.label}
                 style={{
                   background: '#fff',
@@ -193,6 +198,7 @@ export default function Home() {
       </section>
 
       <section
+        className="motion-section"
         style={{ padding: '80px 24px', background: '#fff', textAlign: 'center' }}
       >
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
@@ -219,6 +225,7 @@ export default function Home() {
           >
             {partners.map((p) => (
               <img
+                className="motion-partner"
                 key={p.name}
                 src={p.img}
                 alt={p.name}
@@ -232,6 +239,7 @@ export default function Home() {
           </div>
           <div style={{ marginTop: 36 }}>
             <Link
+              className="motion-link"
               to="/about"
               style={{
                 color: '#17a2d8',

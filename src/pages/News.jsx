@@ -27,9 +27,10 @@ export default function News() {
         title="Stay Informed with Investors Society"
         subtitle="Important news and insights from within the financial world — written for students who want to understand money, markets, and the forces shaping our economy."
         withGlow
+        animated
       />
 
-      <section style={{ padding: '80px 24px' }}>
+      <section className="motion-section" style={{ padding: '80px 24px' }}>
         <div style={{ maxWidth: 820, margin: '0 auto', textAlign: 'center' }}>
           <span
             style={{
@@ -71,6 +72,7 @@ export default function News() {
             world.
           </p>
           <a
+            className="motion-button"
             href={NEWSLETTER_URL}
             target="_blank"
             rel="noopener noreferrer"
@@ -91,7 +93,7 @@ export default function News() {
         </div>
       </section>
 
-      <section style={{ padding: '80px 24px', background: '#f7f9fc' }}>
+      <section className="motion-section" style={{ padding: '80px 24px', background: '#f7f9fc' }}>
         <div style={{ maxWidth: 1000, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 56 }}>
             <h2
@@ -118,6 +120,7 @@ export default function News() {
           >
             {newsletterHighlights.map((item) => (
               <div
+                className="motion-card motion-news-card"
                 key={item.title}
                 style={{
                   background: '#fff',
@@ -149,8 +152,9 @@ export default function News() {
         </div>
       </section>
 
-      <section style={{ padding: '80px 24px' }}>
+      <section className="motion-section" style={{ padding: '80px 24px' }}>
         <div
+          className="motion-news-cta"
           style={{
             maxWidth: 720,
             margin: '0 auto',
@@ -185,6 +189,7 @@ export default function News() {
             or sign up for future ones.
           </p>
           <a
+            className="motion-button motion-button--light"
             href={NEWSLETTER_URL}
             target="_blank"
             rel="noopener noreferrer"

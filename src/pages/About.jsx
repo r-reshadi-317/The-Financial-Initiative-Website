@@ -30,9 +30,10 @@ export default function About() {
         badge="Our Story"
         title="About The Financial Initiative"
         subtitle="A student-led nonprofit on a mission to close the financial literacy gap."
+        animated
       />
 
-      <section style={{ padding: '80px 24px' }}>
+      <section className="motion-section" style={{ padding: '80px 24px' }}>
         <div style={{ maxWidth: 820, margin: '0 auto' }}>
           <div
             style={{
@@ -91,6 +92,7 @@ export default function About() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: 20 }}>
               {missionCards.map((card) => (
                 <div
+                  className="motion-card"
                   key={card.label}
                   style={{
                     background: '#f7f9fc',
@@ -124,7 +126,7 @@ export default function About() {
         </div>
       </section>
 
-      <section style={{ padding: '80px 24px', background: '#f7f9fc' }}>
+      <section className="motion-section" style={{ padding: '80px 24px', background: '#f7f9fc' }}>
         <div style={{ maxWidth: 900, margin: '0 auto' }}>
           <div style={{ textAlign: 'center', marginBottom: 64 }}>
             <span
@@ -178,7 +180,7 @@ export default function About() {
         </div>
       </section>
 
-      <section style={{ padding: '80px 24px' }}>
+      <section className="motion-section" style={{ padding: '80px 24px' }}>
         <div style={{ maxWidth: 900, margin: '0 auto', textAlign: 'center' }}>
           <span
             style={{
@@ -227,6 +229,7 @@ export default function About() {
           >
             {partners.map((partner) => (
               <div
+                className="motion-card motion-partner-card"
                 key={partner.name}
                 style={{
                   background: '#fff',
@@ -273,6 +276,7 @@ export default function About() {
             ))}
 
             <Link
+              className="motion-card motion-partner-card"
               to="/get-involved#contact-form"
               style={{
                 background: '#fff',

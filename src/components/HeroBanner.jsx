@@ -4,9 +4,11 @@ export default function HeroBanner({
   subtitle,
   large = false,
   withGlow = false,
+  animated = false,
 }) {
   return (
     <section
+      className={animated ? 'motion-hero' : undefined}
       style={{
         background:
           'linear-gradient(135deg, #0a1628 0%, #0d2347 60%, #1a3a6b 100%)',
@@ -19,6 +21,7 @@ export default function HeroBanner({
     >
       {withGlow && (
         <div
+          className={animated ? 'motion-hero__glow' : undefined}
           style={{
             position: 'absolute',
             inset: 0,
@@ -29,6 +32,7 @@ export default function HeroBanner({
         />
       )}
       <div
+        className={animated ? 'motion-hero__content' : undefined}
         style={{
           maxWidth: large ? 760 : 700,
           margin: '0 auto',
